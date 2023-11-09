@@ -1,2 +1,7 @@
 @use "../global";
 @use "../components/upcoming-sermon";
+@use "../utils/mixins" as mxn;
+
+.sermon__register__btn {
+  @include mxn.secondary-btn;
+}

@@ -3,3 +3,8 @@
 @use "../components/upcoming-sermon";
 @use "../components/blogs-row";
 @use "../components/sermons-row";
+@use "../utils/mixins" as mxn;
+
+.home__btn {
+  @include mxn.primary-btn;
+}
