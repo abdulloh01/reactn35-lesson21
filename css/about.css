@@ -522,6 +522,10 @@ footer {
   }
 }
 
+body {
+  transition: 0.5s;
+}
+
 header {
   margin-top: 80px;
   background-image: url(/assets/images/about/header-bg.png);
