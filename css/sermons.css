@@ -232,47 +232,6 @@ button {
     justify-content: space-between;
   }
 }
-.sermon__register__btn {
-  padding: 24px 64px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #161722;
-  color: #ffd2a4;
-  display: block;
-  margin-top: 32px;
-  margin-left: 80px;
-}
-.sermon__register__btn:hover {
-  color: #fff;
-}
-
-.home-1 {
-  padding-top: 250px;
-  background-image: url("../../assets/images/sermons/sermons-home.png");
-  padding-bottom: 100px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.home-1 h2 {
-  color: #232536;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
-.home-1 h1 {
-  color: #232536;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 64px;
-  letter-spacing: -0.48px;
-  text-transform: uppercase;
-}
-
 .up-coming {
   padding-top: 150px;
 }
@@ -370,6 +329,69 @@ button {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.sermon__register__btn {
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #161722;
+  color: #ffd2a4;
+  display: block;
+  margin-top: 32px;
+  margin-left: 80px;
+}
+.sermon__register__btn:hover {
+  color: #fff;
+}
+.sermon__register__btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.sermon__register__btn {
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #161722;
+  color: #ffd2a4;
+  display: block;
+  margin-top: 32px;
+  margin-left: 80px;
+}
+.sermon__register__btn:hover {
+  color: #fff;
+}
+
+.home-1 {
+  padding-top: 250px;
+  background-image: url("../../assets/images/sermons/sermons-home.png");
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-1 h2 {
+  color: #232536;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.home-1 h1 {
+  color: #232536;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
 }
 
 .events {
