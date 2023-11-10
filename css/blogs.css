@@ -390,3 +390,24 @@ body {
 .blog-post .blog-post-cards .blog-post-card .blog-post-card:hover .line {
   background-color: #ffd0a0;
 }
+
+@media (max-width: 1100px) {
+  .blog-post .blog-post-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .blog-post .blog-post-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .blog-post .blog-post-cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .blogs .blogs-cards {
+    grid-template-columns: auto;
+  }
+}

@@ -353,6 +353,11 @@ button {
   color: white;
 }
 
+@media (max-width: 650px) {
+  .up-coming .sermons-cards {
+    grid-template-columns: auto;
+  }
+}
 .home__btn {
   padding: 24px 64px;
   border-radius: 12px;

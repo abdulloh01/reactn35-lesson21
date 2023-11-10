@@ -353,6 +353,11 @@ button {
   color: white;
 }
 
+@media (max-width: 650px) {
+  .up-coming .sermons-cards {
+    grid-template-columns: auto;
+  }
+}
 .sermon__register__btn {
   padding: 24px 64px;
   border-radius: 12px;
@@ -483,4 +488,20 @@ button {
   font-weight: 400;
   line-height: 24px;
   padding-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .events .events-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .events .events-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .events .events-cards {
+    grid-template-columns: auto;
+  }
 }

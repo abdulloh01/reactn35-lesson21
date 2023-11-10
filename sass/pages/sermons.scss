@@ -125,3 +125,24 @@
     }
   }
 }
+@media (max-width: 1000px) {
+  .events {
+    .events-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media (max-width: 800px) {
+  .events {
+    .events-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 500px) {
+  .events {
+    .events-cards {
+      grid-template-columns: auto;
+    }
+  }
+}
