@@ -398,3 +398,119 @@ footer {
 .footer__btn {
   display: inline-block;
 }
+
+body {
+  background: var(--Grey, #F5F2F0);
+  transition: 0.5s;
+}
+
+.header {
+  margin-top: 208px;
+}
+.header img {
+  margin-top: 64px;
+  max-width: 100%;
+}
+.header .header__content {
+  text-align: center;
+}
+.header .header__content span {
+  background: var(--Gradient, linear-gradient(110deg, #A54E2B -53.83%, #DC9853 62.61%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+.header .header__content h2 {
+  margin: 16px 0;
+  color: var(--Black, #161722);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+.header .header__content p {
+  padding-right: 13px;
+  display: inline;
+  color: var(--Black, #161722);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.blog-1 {
+  margin-right: auto;
+  margin-left: auto;
+}
+.blog-1 img {
+  text-align: center;
+  max-width: 100%;
+}
+.blog-1 h2 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 767.001px;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  color: var(--Black, #161722);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+.blog-1 p {
+  margin: 24px auto;
+  max-width: 768px;
+  color: var(--Black, #161722);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.blog-1 .img-box {
+  text-align: center;
+}
+.blog-1 .span-box {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 740px;
+  border-left: 3px solid #FFD2A4;
+  padding-left: 24px;
+}
+.blog-1 .span-box span {
+  margin: 30px 0;
+  max-width: 740px;
+  color: var(--Black, #161722);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.blog-1 .ul-box {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 608px;
+  border: none;
+}
+.blog-1 .ul-box li {
+  color: var(--Black, #161722);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.dark {
+  background-color: #161722;
+}
+
+.dark .header .header__content h2, .dark .header .header__content p {
+  color: #fff;
+}
+
+.dark .blog-1 h2, .dark .blog-1 p, .dark .blog-1 div span, .dark .blog-1 .ul-box li {
+  color: #fff;
+}

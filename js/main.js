@@ -2,9 +2,9 @@ let modeBtn = document.getElementById("mode-btn");
 
 modeBtn.addEventListener("click", function () {
   if (document.body.className != "dark") {
-    this.firstElementChild.src = "./assets/images/home/light.svg";
+    this.firstElementChild.src = "../assets/images/home/light.svg";
   } else {
-    this.firstElementChild.src = "./assets/images/home/dark.svg";
+    this.firstElementChild.src = "../assets/images/home/dark.svg";
   }
   document.body.classList.toggle("dark");
 });

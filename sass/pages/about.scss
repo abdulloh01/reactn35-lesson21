@@ -1,2 +1,856 @@
 @use "../global";
-@use "../components/love-compassion"
+@use "../components/love-compassion";
+
+body{
+    transition: 0.5s;
+}
+
+header{
+    margin-top: 80px;
+    background-image: url(/assets/images/about/header-bg.png);
+    background-size: cover;
+    max-width: 100%;
+    height: 420px;
+    
+}
+
+.header{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    p{
+        color: var(--Black, #161722);
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h1{
+        color: var(--Black, #161722);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.48px;
+        text-transform: uppercase;
+    }
+}
+
+main{
+
+    .love-compassion{
+        margin: 128px auto;
+
+        .love-compassion__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span{
+                color: var(--Black, #161722);
+
+                /* Label 02 */
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            h2{
+                color: var(--Black, #161722);
+                margin-bottom: 32px;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -0.48px;
+                text-transform: uppercase;
+            }
+
+            p{
+                color: var(--Black, #161722);
+                text-align: center;
+                max-width: 768px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        .love-compassion__card-box{
+            
+            margin-top: 112px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 24px;
+
+           
+            
+            .love-compassion_card{
+                cursor: pointer;
+                transition: 0.5s;
+                img{
+                    max-width: 293px;
+
+                }
+            }
+
+            .love-compassion_card:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        @media (max-width:1000px) {
+            .love-compassion__card-box{
+                margin-top: 112px;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+
+                .love-compassion_card:hover {
+                    transform: scale(1.1);
+                }
+                
+            }
+        }
+
+        @media (max-width:980px) {
+            .love-compassion__card-box{
+                margin-top: 112px;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                text-align: center;
+
+                .love-compassion_card:hover {
+                    transform: scale(1.1);
+                }
+                
+            }
+        }
+
+        @media (max-width:350px) {
+            .love-compassion__card-box{
+                
+                .love-compassion_card{
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    img{
+                        max-width: 150px;
+                    }
+                }
+    
+                .love-compassion_card:hover {
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
+
+        .love-compassion__bottom-content{
+            margin-top: 130px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                span{
+                    color: var(--Black, #161722);
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+
+                h4{
+                    max-width: 371px;
+                    color: var(--Black, #161722);
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    letter-spacing: -0.32px;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    max-width: 371px;
+                    color: var(--Black, #161722);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+        }
+
+        @media (max-width:900px) {
+            .love-compassion__bottom-content{
+                margin-top: 130px;
+                display: flex;
+                flex-direction: column;
+
+                div *{
+                    text-align: center;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                
+
+                
+            }
+        }
+
+        
+    }
+
+    .benefits{
+        display: grid;
+        gap: 96px;
+
+        .benefits__content{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            gap: 16px;
+
+            span{
+                color: var(--Black, #161722);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            h2{
+                max-width: 432px;
+                text-align: center;
+                color: var(--Black, #161722);
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -0.48px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .benefits__card-box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 24px;
+            
+
+            .benefits__card-left{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin-top: auto;
+                margin-bottom: auto;
+                h4{
+                    color: var(--Black, #161722);
+
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    letter-spacing: -0.32px;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    color: var(--Black, #161722);
+                    max-width: 500px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        @media (max-width:900px) {
+
+            .benefits__content{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+                gap: 16px;
+    
+                span{
+                    color: var(--Black, #161722);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+    
+                h2{
+                    max-width: 432px;
+                    text-align: center;
+                    color: var(--Black, #161722);
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 64px;
+                    letter-spacing: -0.48px;
+                    text-transform: uppercase;
+                }
+    
+            }
+    
+            .benefits__card-box{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                margin-right: auto;
+                margin-left: auto;
+                gap: 24px;
+                
+    
+                .benefits__card-left{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    h4{
+                        color: var(--Black, #161722);
+    
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 44px;
+                        letter-spacing: -0.32px;
+                        text-transform: uppercase;
+                    }
+    
+                    p{
+                        color: var(--Black, #161722);
+                        max-width: 500px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+            
+        }
+
+        @media (max-width:600px) {
+            .benefits__content{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+                gap: 16px;
+    
+                span{
+                    color: var(--Black, #161722);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+    
+                h2{
+                    max-width: 432px;
+                    text-align: center;
+                    color: var(--Black, #161722);
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 64px;
+                    letter-spacing: -0.48px;
+                    text-transform: uppercase;
+                }
+    
+            }
+    
+            .benefits__card-box{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 24px;
+                
+    
+                .benefits__card-left{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    h4{
+                        color: var(--Black, #161722);
+    
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 44px;
+                        letter-spacing: -0.32px;
+                        text-transform: uppercase;
+                    }
+    
+                    p{
+                        color: var(--Black, #161722);
+                        max-width: 500px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+
+                .benefits__card-right{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+
+            }
+            
+        }
+
+        @media (max-width:350px) {
+            
+            
+        }
+    }
+
+    .church-members{
+        margin: 128px auto;
+
+        .church-members__content{
+            text-align: center;
+            margin-bottom: 64px;
+            span{
+                color: var(--Black, #161722);
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            h2{
+                color: var(--Black, #161722);
+
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -0.48px;
+                text-transform: uppercase;
+            }
+        }
+
+        .church-members__card-box{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 24px;
+
+            .church-members__card{
+                display: grid;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+                max-width: 302px;
+                padding: 48px 0;
+
+                background: var(--Grey, #F5F2F0);
+
+                h5{
+                    color: var(--Black, #161722);
+                    margin-top: 24px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    letter-spacing: -0.24px;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    color: var(--Black, #161722);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                .messengers-icon-box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 16px;
+                    gap: 20px;
+                }
+            }
+        }
+        
+        @media (max-width:1000px) {
+            .church-members__content{
+                text-align: center;
+                margin-bottom: 64px;
+                
+            }
+    
+            .church-members__card-box{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                padding-right: 50px;
+                padding-left: 50px;
+    
+                .church-members__card{
+                    display: grid;
+                    align-items: center;
+                    text-align: center;
+                    max-width: 302px;
+                    padding: 48px 0;
+    
+                    background: var(--Grey, #F5F2F0);
+    
+                   
+    
+                    
+                }
+            }
+        }
+
+        @media (max-width:600px) {
+
+            .church-members__content{
+                text-align: center;
+                margin-bottom: 64px;
+                
+            }
+    
+            .church-members__card-box{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+
+    
+                .church-members__card{
+                    display: grid;
+                    align-items: center;
+                    text-align: center;
+                    max-width: 302px;
+                    padding: 48px 0;
+    
+                    background: var(--Grey, #F5F2F0);
+    
+                   
+    
+                    
+                }
+            }
+            
+        }
+
+        @media (max-width:350px) {
+            .church-members__content{
+                text-align: center;
+                margin-bottom: 44px;
+            }
+    
+            .church-members__card-box{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+
+                .church-members__card{
+                    display: grid;
+                    align-items: center;
+                    text-align: center;
+                    max-width: 202px;
+                    padding: 48px 0;
+                    background: var(--Grey, #F5F2F0);
+                }
+            }
+            
+        }
+    }
+}
+
+.dark{
+    background-color: #161722;
+}
+
+.dark .love-compassion{
+    margin: 128px auto;
+
+    .love-compassion__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span,h2,p{
+            color: #FFF;
+        }
+
+    }
+
+    .love-compassion__card-box{
+        
+        margin-top: 112px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 24px;
+
+       
+        
+        .love-compassion_card{
+            cursor: pointer;
+            transition: 0.5s;
+            img{
+                max-width: 293px;
+            }
+        }
+
+        .love-compassion_card:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    @media (max-width:1000px) {
+        .love-compassion__card-box{
+            margin-top: 112px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
+            .love-compassion_card:hover {
+                transform: scale(1.1);
+            }
+            
+        }
+    }
+
+    @media (max-width:980px) {
+        .love-compassion__card-box{
+            margin-top: 112px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            text-align: center;
+
+            .love-compassion_card:hover {
+                transform: scale(1.1);
+            }
+            
+        }
+    }
+
+    @media (max-width:350px) {
+        .love-compassion__card-box{
+            
+            .love-compassion_card{
+                cursor: pointer;
+                transition: 0.5s;
+
+                img{
+                    max-width: 150px;
+                }
+            }
+
+            .love-compassion_card:hover {
+                transform: scale(1.1);
+            }
+        }
+        
+    }
+
+    .love-compassion__bottom-content{
+        margin-top: 130px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        div{
+            span,h4,p{
+                color: #FFF;
+            }
+
+        }
+
+    }
+
+    @media (max-width:900px) {
+        .love-compassion__bottom-content{
+            margin-top: 130px;
+            display: flex;
+            flex-direction: column;
+
+            div *{
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            
+
+            
+        }
+    }
+
+    
+}
+  
+.dark .benefits{
+    display: grid;
+    gap: 96px;
+
+    .benefits__content{
+        
+        span,h2{
+            color: #FFF;
+        }
+    }
+
+    .benefits__card-box{
+
+        .benefits__card-left{
+            
+            h4,p{
+                color: #FFF;
+            }
+        }
+    }
+
+    @media (max-width:900px) {
+
+        .benefits__content{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            gap: 16px;
+
+            span{
+                color: var(--Black, #161722);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            h2{
+                max-width: 432px;
+                text-align: center;
+                color: var(--Black, #161722);
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -0.48px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .benefits__card-box{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-right: auto;
+            margin-left: auto;
+            gap: 24px;
+            
+
+            .benefits__card-left{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin-top: auto;
+                margin-bottom: auto;
+                h4{
+                    color: var(--Black, #161722);
+
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    letter-spacing: -0.32px;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    color: var(--Black, #161722);
+                    max-width: 500px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+        
+    }
+
+    @media (max-width:600px) {
+        .benefits__content{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            gap: 16px;
+
+            span{
+                color: var(--Black, #161722);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            h2{
+                max-width: 432px;
+                text-align: center;
+                color: var(--Black, #161722);
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 64px;
+                letter-spacing: -0.48px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .benefits__card-box{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 24px;
+            
+
+            .benefits__card-left{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin-top: auto;
+                margin-bottom: auto;
+                h4{
+                    color: var(--Black, #161722);
+
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    letter-spacing: -0.32px;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    color: var(--Black, #161722);
+                    max-width: 500px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+            .benefits__card-right{
+                img{
+                    max-width: 100%;
+                }
+            }
+
+        }
+        
+    }
+
+    @media (max-width:350px) {
+        
+        
+    }
+}
+
+.dark .church-members{
+    background-color: #161722;
+
+    .church-members__content{
+        text-align: center;
+        margin-bottom: 64px;
+
+        span,h2{
+          color: #FFF;  
+        }
+        
+    }
+    
+}
