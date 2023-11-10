@@ -86,3 +86,149 @@ button {
 .container-sm {
   max-width: 808px;
 }
+
+.dark .contact__btn {
+  background-color: grey !important;
+}
+
+.nav {
+  height: 80px;
+  background-color: #0D0D0D;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav__sec {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__sec .nav__logo img {
+  padding-right: 65px;
+}
+
+.nav__links-btns {
+  padding-left: 65px;
+  border-left: 1px solid rgb(160, 160, 160);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.nav__links-btns ul {
+  display: flex;
+  gap: 48px;
+  list-style-type: none;
+}
+.nav__links-btns a {
+  text-decoration: none;
+  color: var(--White, #FFF);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.nav__btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.nav__btn .contact__btn {
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffd2a4;
+  color: #161722;
+  padding: 20px 48px;
+}
+.nav__btn .contact__btn:hover {
+  background-color: #f2c79b;
+}
+.nav__btn .dark-light {
+  background-color: #0d0d0d;
+}
+
+.menu {
+  background-color: #0D0D0D;
+  display: none;
+}
+
+#navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  transition: 0.5s;
+}
+
+#navbar-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.toggle__links a {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+
+.toggle__ul {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  right: 40%;
+  list-style-type: none;
+}
+
+.toggle__btn {
+  position: absolute;
+  top: 60%;
+  left: 27%;
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffd2a4;
+  color: #161722;
+}
+.toggle__btn:hover {
+  background-color: #f2c79b;
+}
+
+@media (max-width: 900px) {
+  .nav__links, .contact__btn, .dark-light {
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+  .nav__sec {
+    justify-content: space-between;
+  }
+}

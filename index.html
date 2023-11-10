@@ -7,10 +7,89 @@
     <link rel="stylesheet" href="./css/home.min.css" />
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi ipsam fugiat vel libero alias laudantium, quam temporibus quas omnis, sapiente ducimus consequatur cumque, reiciendis officiis architecto quis iusto tempora sunt harum doloremque ut voluptas illo quasi? Rerum veritatis neque perferendis dicta blanditiis perspiciatis distinctio repudiandae culpa cupiditate. Cumque deleniti alias, est provident sunt aspernatur facere ad voluptates sapiente consequuntur, a laborum fugiat explicabo fuga eos eum error. Dolorem iste quam saepe repellat? Omnis minima quas, quo unde at perferendis. Impedit beatae, nemo cupiditate obcaecati at ducimus. Blanditiis, non vel, modi voluptatum laudantium, vero sunt corporis ipsum consectetur magni fugiat.
-    </p>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__sec container">
+          <div class="nav__logo">
+            <img src="./assets/images/home/Logo.svg" alt="logo">
+          </div>  
+          <div class="nav__links-btns">
+            <div class="nav__links">
+              <ul class="nav__ul">
+                <li class="nav__li">
+                  <a href="#">
+                    Home
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a href="./pages/about.html">
+                    About us
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a href="./pages/sermon.html">
+                    Sermon
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a href="./pages/blog.html">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__btn">
+              <a href="./pages/contact.html">
+                <button class="contact__btn">
+                  Contact us
+                </button>
+              </a>
+              <button class="dark-light" id="mode-btn">
+                <img src="./assets/images/home/dark.svg" alt="dark light">
+              </button>
+              <button class="menu" id="navbar-open">
+                <img src="./assets/images/home/menu.svg" alt="menu">
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="navbar-responsive">
+      <button id="navbar-close">
+        <img src="./assets/images/home/close.svg" alt="close">
+      </button>
+      <ul class="toggle__ul">
+        <li class="toggle__links">
+          <a href="#">
+            Home
+          </a>
+        </li>
+        <li class="toggle__links">
+          <a href="./pages/about.html">
+            About us
+          </a>
+        </li>
+        <li class="toggle__links">
+          <a href="./pages/sermon.html">
+            Sermon
+          </a>
+        </li>
+        <li class="toggle__links">
+          <a href="./pages/blog.html">
+            Blog
+          </a>
+        </li>
+      </ul>
+      <a href="./pages/contact.html">
+        <button class="toggle__btn">
+          Contact Us
+        </button>
+      </a>
+    </div>
+    
     <button class="home__btn">Learn more</button>
-    <script src="./js/main.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
