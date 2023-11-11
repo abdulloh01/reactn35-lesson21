@@ -97,6 +97,7 @@ button {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 
 .nav__sec {
@@ -203,14 +204,12 @@ button {
 .toggle__contact-link {
   display: flex;
   justify-content: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .toggle__btn {
-  position: absolute;
-  top: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   padding: 24px 64px;
   border-radius: 12px;
   font-size: 16px;
@@ -220,6 +219,8 @@ button {
   text-align: center;
   background-color: #ffd2a4;
   color: #161722;
+  position: absolute;
+  top: 62%;
 }
 .toggle__btn:hover {
   background-color: #f2c79b;
@@ -240,7 +241,6 @@ button {
   }
 }
 footer {
-  padding-top: 80px;
   background-color: #161722;
 }
 

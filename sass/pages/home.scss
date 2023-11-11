@@ -4,12 +4,362 @@
 @use "../components/blogs-row";
 @use "../components/sermons-row";
 @use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
 
 .home__btn {
   @include mxn.primary-btn;
 }
 
 .dark *{
-  background-color: black !important;
+  background-color: black ;
   color: white !important;
 }
+.dark{
+  .home___sec{
+    padding: 0;
+  }
+  .home__info{
+    h4{
+      padding-top:128px;
+    }
+    p{
+      padding-bottom: 128px;
+    }
+  }
+}
+
+.dard .home__btn{
+  background-color: grey !important;
+}
+
+.dark{
+  .home__sec, .home{
+    background-color: black !important;
+  }
+}
+
+
+// HOME start
+
+.main{
+  padding-top: 80px;
+}
+
+.home__sec{
+  background: url(../../assets/images/home/home-bcg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__info{
+  h4{
+    padding-top: 128px;
+    margin-bottom: 16px;
+    color: var.$white-color;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h1{
+    margin-bottom: 32px;
+    max-width: 592px;
+    color: var.$white-color;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+  }
+  button{
+    margin-bottom: 64px;
+    @include mxn.primary-btn;
+  }
+  p{
+    padding-bottom: 128px;
+    max-width: 308px;
+    color: var.$white-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+  }
+
+  @media(max-width:600px){
+    h1{
+      font-size: 32px;
+      line-height: 42px;
+    }
+    button{
+      max-width: 200px;
+      padding: 15px 30px;
+    }
+  }
+
+  @media(max-width:200px){
+    h4{
+      font-size: 14px;
+    }
+    h1{
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}
+
+
+
+// HOME end
+
+// relevent start
+
+.relevent{
+  margin-bottom: 130px;
+}
+
+.card__row{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+  
+  @media(max-width:1100px){
+    &{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  @media(max-width:770px){
+    &{
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.dark .card{
+  background-color: grey !important;
+}
+
+.dark{
+  .card *:not(.example){
+    background-color: grey !important;
+  }
+}
+
+.card{
+  padding-left: 100px;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  padding-right: 0;
+  background-color: #FFF5EB;
+  img{
+    margin-bottom: 24px;
+  }
+  h3{
+    max-width: 150px;
+    margin-bottom: 8px;
+    color:  #161722;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+  }
+  p{
+    padding-right: 50px;
+    margin-bottom: 100px;
+    max-width: 250px;
+    color:#161722;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  @media(max-width:1100px){
+    &{
+      padding-left: 150px;
+    }
+    .example{
+      margin-left: -150px; 
+    }
+  }
+
+  @media(max-width:550px){
+    &{
+      padding-left: 100px;
+    }
+    .example{
+      margin-left: -100px;
+    }
+  }
+
+  @media(max-width:350px){
+    &{
+      padding-left: 30px;
+    }
+  }
+}
+
+.relevent__header{
+  h4{
+    margin-top: 130px;
+    margin-bottom: 16px;
+    color:  #161722;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  h2{
+    margin-bottom: 64px;
+    color:  #161722;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+  }
+}
+
+.card__line{
+  margin-top: -25px;
+  
+  height: 16px;
+  background-color: var.$primary-color;
+}
+
+.example{
+  margin-left: -100px;
+  padding-bottom: 0;
+  max-width: 750pxpx;
+}
+
+// relevent end
+
+// LOVE COMPASSION start
+
+.love-campassion{
+  margin-bottom: 130px;
+}
+
+.love-compassion__bottom-conten{
+  display: flex;
+  justify-content: center;
+}
+
+// LOVE COMPASSION end
+
+// BENEFITS OF CHURCH start
+
+.dark{
+  .benefits__church{
+    background-color: black !important  ;
+  }
+}
+
+.benefits__church{
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #F5F2F0;
+}
+
+.benefits__header{
+  h4{
+    margin-bottom: 20px;
+    color:#161722;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  h2{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 64px;
+    max-width: 430px;
+    color:#161722;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px; 
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+  }
+}
+
+.dark{
+  .benefits__card :is(h3, p) {
+    background-color: transparent;
+  }
+}
+
+.benefits__row{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  
+  @media(max-width:1300px){
+    &{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+    @media(max-width:992px){
+      &{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+      }
+    }
+    
+    @media(max-width:700px){
+      &{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+      }
+    }
+  
+}
+
+.benefits__card{
+  h3{
+    max-width: 240px;
+    position: absolute;
+    color:  #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    text-transform: uppercase;
+  }
+  p{
+    max-width: 240px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    position: absolute;
+    bottom: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  &:hover{
+    h3{
+      bottom: 120px;
+    }
+    p{
+      display: block;
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+}
+
+.benefits__img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+// BENEFITS OF CHURCH end

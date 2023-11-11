@@ -12,6 +12,7 @@
     position: fixed;
     width: 100%;
     top: 0; 
+    z-index: 1;
 }
 
 .nav__sec{
@@ -81,6 +82,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // text-align: center;
     background-color: green;
     transition: 0.5s;
 }
@@ -115,15 +117,15 @@
 .toggle__contact-link{
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .toggle__btn{
-    position: absolute;
-    top: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     @include mix.primary-btn;
+    position: absolute;
+    top: 62%;
 }
 
 @media(max-width:900px){
