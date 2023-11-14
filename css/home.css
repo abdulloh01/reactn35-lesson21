@@ -173,8 +173,9 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: rgb(9, 9, 9);
   transition: 0.5s;
+  z-index: 2;
 }
 
 #navbar-close {
@@ -678,12 +679,8 @@ footer {
   padding-bottom: 128px;
 }
 
-.dard .home__btn {
+.dark .home__btn {
   background-color: grey !important;
-}
-
-.dark .home__sec, .dark .home {
-  background-color: black !important;
 }
 
 .main {
@@ -691,7 +688,7 @@ footer {
 }
 
 .home__sec {
-  background: url(../../assets/images/home/home-bcg-img.jpg);
+  background: url(../../assets/images/home/home-bcg-img.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -935,6 +932,9 @@ footer {
   }
 }
 
+.benefits__card {
+  overflow: hidden;
+}
 .benefits__card h3 {
   max-width: 240px;
   position: absolute;

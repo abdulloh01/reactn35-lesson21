@@ -173,8 +173,9 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: rgb(9, 9, 9);
   transition: 0.5s;
+  z-index: 2;
 }
 
 #navbar-close {

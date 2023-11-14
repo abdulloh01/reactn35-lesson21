@@ -14,6 +14,7 @@
   background-color: black ;
   color: white !important;
 }
+
 .dark{
   .home___sec{
     padding: 0;
@@ -28,14 +29,8 @@
   }
 }
 
-.dard .home__btn{
+.dark .home__btn{
   background-color: grey !important;
-}
-
-.dark{
-  .home__sec, .home{
-    background-color: black !important;
-  }
 }
 
 
@@ -46,7 +41,7 @@
 }
 
 .home__sec{
-  background: url(../../assets/images/home/home-bcg-img.jpg);
+  background: url(../../assets/images/home/home-bcg-img.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -317,6 +312,7 @@
 }
 
 .benefits__card{
+  overflow: hidden;
   h3{
     max-width: 240px;
     position: absolute;
