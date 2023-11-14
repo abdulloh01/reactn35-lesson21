@@ -112,3 +112,11 @@
     color: white;
   }
 }
+
+@media (max-width: 650px) {
+  .up-coming {
+    .sermons-cards {
+      grid-template-columns: auto;
+    }
+  }
+}
